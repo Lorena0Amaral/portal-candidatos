@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Candidatos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bem-vinda, Letícia</h1>
+    <p>Veja possíveis candidatos do seu interesse</p>
+  </header>
+
+  <main id="homeSection">
+    <section class="candidatos">
+      <div class="card" onclick="mostrarPerfil('murilo')">
+        <img src="https://via.placeholder.com/100" alt="Murilo Lima">
+        <h2>Dr. Murilo Lima</h2>
+        <p>Propostas e Projetos</p>
+      </div>
+      <div class="card" onclick="mostrarPerfil('marina')">
+        <img src="https://via.placeholder.com/100" alt="Marina Silva">
+        <h2>Marina Silva</h2>
+        <p>Notícias da semana</p>
+      </div>
+      <div class="card" onclick="mostrarPerfil('lula')">
+        <img src="https://via.placeholder.com/100" alt="Lula">
+        <h2>Luiz Inácio Lula da Silva</h2>
+        <p>Notícias da semana</p>
+      </div>
+      <div class="card" onclick="mostrarPerfil('bolsonaro')">
+        <img src="https://via.placeholder.com/100" alt="Bolsonaro">
+        <h2>Jair Bolsonaro</h2>
+        <p>Notícias da semana</p>
+      </div>
+    </section>
+  </main>
+
+  <main id="perfilSection" class="hidden">
+    <section class="perfil">
+      <img id="fotoCandidato" src="" alt="Foto do Candidato">
+      <h2 id="nomeCandidato">Nome do Candidato</h2>
+      <p id="descricaoCandidato">Descrição detalhada do candidato.</p>
+      <button onclick="voltarHome()">Voltar</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Projeto Integrado - ADS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
